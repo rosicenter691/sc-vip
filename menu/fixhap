@@ -58,7 +58,7 @@ clear
 
 
 
-REPO="https://raw.githubusercontent.com/vpn-store0/autoscript/main/Cfg/"
+REPO="https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Cfg/"
 # fixhap fix Haproxy
 clear
 echo -e "${BlueCyan} ------------------------- ${Xark} "
