@@ -265,7 +265,7 @@ echo $nama > /etc/xray/username
 fi
 echo ""
 elif [[ $host == "2" ]]; then
-wget https://raw.githubusercontent.com/rosicenter691/sc-vip/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Fls/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
