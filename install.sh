@@ -652,9 +652,9 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://raw.githubusercontent.com/frosi4524/scvpnvip/main/ws/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/frosi4524/scvpnvip/main/ws/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/frosi4524/scvpnvip/main/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Fls/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Cfg/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Fls/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
