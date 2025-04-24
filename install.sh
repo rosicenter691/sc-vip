@@ -32,9 +32,9 @@ clear && clear && clear
 clear;clear;clear
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To ROSI STORE Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Rosi Store Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green} Tunneling VVIP ${NC}${YELLOW}(${NC} ${green}FranataSTORE ${NC}${YELLOW})${NC}"
+echo -e "         Auther : ${green} Tunneling VVIP ${NC}${YELLOW}(${NC} ${green}Rosi Store ${NC}${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 5
@@ -78,7 +78,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://raw.githubusercontent.com/frosi4524/izin/main/Lisennse"
+izinsc="https://raw.githubusercontent.com/rosicenter691/ijin/main/vvip"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -108,7 +108,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/frosi4524/scvpnvip/main/"
+REPO="https://raw.githubusercontent.com/rosicenter691/sc-vip/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -265,7 +265,7 @@ echo $nama > /etc/xray/username
 fi
 echo ""
 elif [[ $host == "2" ]]; then
-wget https://raw.githubusercontent.com/frosi4524/scvpnvip/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/rosicenter691/sc-vip/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
@@ -452,7 +452,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget raw.githubusercontent.com/frosi4524/scvpnvip/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
