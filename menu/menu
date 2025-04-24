@@ -29,10 +29,10 @@ clear
 ######################################
 # // USERNAME IZIN IPP
 rm -f /usr/bin/user
-username=$(curl -sS https://nata.serv00.net/license/v1.8/vip | grep $MYIP | awk '{print $2}')
+username=$(curl -sS https://raw.githubusercontent.com/rosicenter691/ijin/main/vvip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
 rm -f /usr/bin/e
-valid=$(curl -sS https://nata.serv00.net/license/v1.8/vip | grep $MYIP | awk '{print $3}')
+valid=$(curl -sS https://raw.githubusercontent.com/rosicenter691/ijin/main/vvip | grep $MYIP | awk '{print $3}')
 echo "$valid" > /usr/bin/e
 ######################################
 # // DETAIL ORDER IZIN IP
@@ -59,7 +59,7 @@ mai="datediff "$Exp" "$DATE""
 Info="\033[92mACTIVED\033[0m"
 Eror="\033[91mEXPIRED\033[0m"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl -sS https://nata.serv00.net/license/v1.8/vip | grep $MYIP | awk '{print $3}')
+Exp1=$(curl -sS https://raw.githubusercontent.com/rosicenter691/ijin/main/vvip | grep $MYIP | awk '{print $3}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -220,7 +220,7 @@ NC='\e[0m'
 # // ----->>> COLOR VALIDATIONS
 echo -e " "
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " ${z}│$NC\033[41m         Welcome To Script Premium FranataSTORE           $NC${z}│$NC"
+echo -e " ${z}│$NC\033[41m         Welcome To Script Premium Rosi Store           $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│$NC NGINX$NC: $status_nginx ${WHITE}WS-EPRO$NC: $status_ws_epro ${WHITE}DROPBEAR$NC: $status_dropbear ${WHITE}HAPROXY$NC: $status_haproxy   $NC${WHITE}$NC"
@@ -281,7 +281,7 @@ m-bot
 ;;
 8)
 clear
-wget https://nata.serv00.net/v1.8/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/rosicenter691/sc-vip/main/update.sh && chmod +x update.sh && ./update.sh
 ;;
 9)
 clear
