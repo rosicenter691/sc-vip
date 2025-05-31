@@ -9,7 +9,7 @@ apt install curl jq wget screen build-essential -y && reboot
 ```
 3. :
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/frosi4524/coklat/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
+apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/rosicenter691/sc-vip/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 ANTERNATIF
 ```
