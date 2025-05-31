@@ -995,6 +995,6 @@ echo -e "\033[0;32m│   - BadVPN 3                : 7300          │"
 #echo -e "\033[0;32m│   - Proxy Squid             : 3128          │"
 echo -e "\033[0;32m└─────────────────────────────────────────────┘"
 echo ""
-read -p "Press [ Enter ]  TO REBOOT"
+read -p "Press [ Enter ]  TO MENU"
 clear
-reboot
+menu
