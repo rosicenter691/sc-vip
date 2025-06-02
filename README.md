@@ -19,7 +19,3 @@ apt-get update -y && apt install curl wget bzip2 gzip xz-utils screen && if [[ !
 ```
 wget -q https://raw.githubusercontent.com/rosicenter691/sc-vip/main/Cfg/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 ```
-### akses root
-```
-  wget -qO- -O aksesroot.sh https://github.com/rosicenter691/sc-vip/main/aksesroot.sh && bash aksesroot.sh
-```
